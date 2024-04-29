@@ -1,0 +1,86 @@
+body{
+    background-color: hsl(210, 46%, 95%);   
+}
+
+.parent-container{
+    margin: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px; 
+    
+
+}
+#one{
+    background-color:hsl(263, 55%, 52%);
+    color: white;
+}
+#two{
+    background-color:hsl(217, 19%, 35%);
+    color: white;
+    height: 10%;
+
+}
+
+#three{
+    height: 10%;
+}
+
+#four{
+    background-color:hsl(219, 29%, 14%);
+    color: white;
+    height: 100%;
+}
+
+.firstname{
+    float:left;
+    text-align: left;
+    padding-left: 10px;
+   
+    
+}
+img{
+    float: left;
+    border-radius: 70px;
+    width: 40px;
+    box-shadow: 2px 2px 2px;
+}
+h2{
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+#two,#one,#four p{
+   
+    font-size: 16px;
+    color: hsl(0, 0%, 81%)
+}
+
+#three, #five p{
+   
+    font-size: 16px;
+    color: hsl(217, 19%, 35%);
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .card {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (min-width:600px) {
+    .card {
+      flex: 40%;
+    }
+    }
+  
